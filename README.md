@@ -1,4 +1,4 @@
-# FLOWS: Balanced MRC Profiling for Heterogeneous Object-Size Cache"
+# FLOWS: Balanced MRC Profiling for Heterogeneous Object-Size Cache
 
 
 
@@ -99,7 +99,7 @@
       ```
 
 
-3. Plot Figures
+## Plot Figures
    ```bash
    python fig1a.py
    python fig1b.py
