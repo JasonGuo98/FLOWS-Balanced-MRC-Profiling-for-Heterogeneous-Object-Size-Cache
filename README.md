@@ -1,7 +1,3 @@
-# FLOWS: Balanced MRC Profiling for Heterogeneous Object-Size Cache"
-
-
-
 ## Prepare Environment
 
 - Ubuntu 20.04 LTS
@@ -98,8 +94,28 @@
       python profile_slide.py
       ```
 
+   * Minimal Simulation Evaluation:
 
-3. Plot Figures
+      ```bash
+      cd sample_sim/build
+
+      # Weighted Sampling Method
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 0.01 -c S3FIFOd
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 0.01 -c Cacheus
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 0.01 -c ARC
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 0.01 -c TwoQ
+
+      # Exact Method
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 1 -c S3FIFOd
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 1 -c Cacheus
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 1 -c ARC
+      ./wsSim -t ../../trace/wiki/uni_kv_size/wiki_2019u.oracleGeneral -r 1 -c TwoQ
+
+      cp *.csv ../../results
+      ```
+      
+
+3. Draw Figures
    ```bash
    python fig1a.py
    python fig1b.py
@@ -110,6 +126,5 @@
    python fig13.py
    python fig14.py
    python fig15.py
+   python fig17.py
    ```
-
-   Figures are saved in `plots` folder.

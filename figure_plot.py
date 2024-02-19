@@ -562,7 +562,10 @@ def figure17_plot(cache_size, BMR_s, OMR_s, sample_bmrcs, sample_omrcs, names, s
         this_ax.spines['top'].set_linewidth(2)
     
     def scatter_sample(this_ax, samples):
-        evenly_sample = 7
+        if(len(x_idx) == 100):
+            evenly_sample = 7
+        else:
+            evenly_sample = 2
         this_ax.scatter(x_idx[::evenly_sample], samples[3][::evenly_sample], label=names[3], marker = marker[3], edgecolor='None', s = _linewidth*30,)
         this_ax.scatter(x_idx[::evenly_sample], samples[2][::evenly_sample], label=names[2], marker = marker[2], edgecolor='None', s = _linewidth*30,)
         this_ax.scatter(x_idx[::evenly_sample], samples[1][::evenly_sample], label=names[1], marker = marker[1], edgecolor='None', s = _linewidth*30,)
