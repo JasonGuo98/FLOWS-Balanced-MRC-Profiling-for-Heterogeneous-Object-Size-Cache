@@ -1,5 +1,52 @@
 # FLOWS: Balanced MRC Profiling for Heterogeneous Object-Size Cache
 
+This repository contains source code and scripts that help reproduce our EuroSys 2024 paper titled "FLOWS: Balanced MRC Profiling for Heterogeneous Object-Size Cache." Our work aims to provide efficient cache profiling for both Byte Miss Ratio Curve (BMRC) and Object Miss Ratio Curve (OMRC) construction for heterogeneous object-size caches, enabling efficient cache management.
+
+## Overview
+
+Our work is implemented in [src/flows.cc](src/flows.cc). It can be used to process specific trace file formats and BMRC and OMRC construction using [SHARDS](https://www.usenix.org/conference/fast15/technical-sessions/presentation/waldspurger), [HCPP](https://www.usenix.org/conference/atc20/presentation/carra) (CARRA's method), and our FLOWS methods. The specific parameters are as follows:
+
+```bash
+usage: ./flows --trace=string --output=string [options] ... 
+options:
+  -t, --trace                 trace file name (string)
+  -o, --output                output file name (string)
+  -s, --sample_method         FIX_RATE/FIX_NUM (string [=FIX_RATE])
+  -r, --sample_metric         sample rate/ sample num (double [=0.01])
+  -m, --method                REAL/SHARDS/CARRA/FLOWS (string [=REAL])
+  -c, --metric                MAE/MAEQ (string [=MAE])
+  -d, --seed                  random seed (unsigned long [=42])
+  -l, --logpath               logging file path leave blank if not necessary (string [=])
+  -y, --tracetype             trace file type (string [=PLAIN])
+      --total_access_num      total_access_num (long [=0])
+      --total_access_size     total_access_size (long [=0])
+      --unique_access_num     unique_access_num (long [=0])
+      --unique_access_size    unique_access_size (long [=0])
+      --min_item_size         min_item_size (long [=0])
+      --slide_ratio           slide_ratio (double [=0.5])
+  -?, --help                  print this message
+```
+
+Please refer to the comments in the [src/flows.cc](src/flows.cc) file for more detailed information on how to use these parameters and their respective values. For example, use the following command to profile trace `cluster45.oracleGeneral.sample10` with `FLOWS` method under `0.01` sample rate: 
+
+```bash
+./src/flows -t ./trace/twitter/uni_kv_size/cluster45.oracleGeneral.sample10 -o ./results/profile_res-cluster45.oracleGeneral.sample10-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv --sample_method FIX_RATE --sample_metric 0.01 --method FLOWS --tracetype bin -c MAEQ -d 1 --total_access_num 22288116 --total_access_size 1143103486 --unique_access_num 6548645 --unique_access_size 284493919 --min_item_size 1
+```
+
+## File Description
+
+   ```bash
+   ./libCacheSim # Modified for our trace type
+   ./fonts # Font file of Times New Roman
+   ./features # Features needed by LPCA algorithm
+   ./plots # Saved figures
+   ./results # Evaluation csv files for MRCs
+   ./sample_sim # Mini simulations tool
+   ./src # Source code of FLOWS and our implementation of SHARDS and HCPP (Carra's method)
+   ./trace # Downloaded trace files
+   ./trained_model # Saved models LPCA
+   ```
+
 ## Prepare Environment
 
 - Ubuntu 20.04 LTS
@@ -37,7 +84,7 @@
 
 
 
-## Run All Evaluations
+## Run Evaluations
    
 
    * Exact Method: 
@@ -98,7 +145,6 @@
 
    * Minimal Simulation Evaluation:
 
-<<<<<<< HEAD
       ```bash
       cd sample_sim/build
 
@@ -118,10 +164,8 @@
       ```
       
 
-3. Draw Figures
-=======
 ## Plot Figures
->>>>>>> 2f5df2858c5a94f33020de89590dcfbc4c3a04d6
+
    ```bash
    python fig1a.py
    python fig1b.py
@@ -132,11 +176,7 @@
    python fig13.py
    python fig14.py
    python fig15.py
-<<<<<<< HEAD
    python fig17.py
-   ```
-=======
    ```
 
    Figures are saved in `plots` folder.
->>>>>>> 2f5df2858c5a94f33020de89590dcfbc4c3a04d6
