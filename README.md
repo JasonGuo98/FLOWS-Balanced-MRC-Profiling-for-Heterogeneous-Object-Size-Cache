@@ -1,3 +1,5 @@
+# FLOWS: Balanced MRC Profiling for Heterogeneous Object-Size Cache
+
 ## Prepare Environment
 
 - Ubuntu 20.04 LTS
@@ -96,6 +98,7 @@
 
    * Minimal Simulation Evaluation:
 
+<<<<<<< HEAD
       ```bash
       cd sample_sim/build
 
@@ -116,6 +119,9 @@
       
 
 3. Draw Figures
+=======
+## Plot Figures
+>>>>>>> 2f5df2858c5a94f33020de89590dcfbc4c3a04d6
    ```bash
    python fig1a.py
    python fig1b.py
@@ -126,5 +132,11 @@
    python fig13.py
    python fig14.py
    python fig15.py
+<<<<<<< HEAD
    python fig17.py
    ```
+=======
+   ```
+
+   Figures are saved in `plots` folder.
+>>>>>>> 2f5df2858c5a94f33020de89590dcfbc4c3a04d6
