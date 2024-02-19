@@ -33,6 +33,8 @@ Please refer to the comments in the [src/flows.cc](src/flows.cc) file for more d
 ./src/flows -t ./trace/twitter/uni_kv_size/cluster45.oracleGeneral.sample10 -o ./results/profile_res-cluster45.oracleGeneral.sample10-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv --sample_method FIX_RATE --sample_metric 0.01 --method FLOWS --tracetype bin -c MAEQ -d 1 --total_access_num 22288116 --total_access_size 1143103486 --unique_access_num 6548645 --unique_access_size 284493919 --min_item_size 1
 ```
 
+
+
 ## File Description
 
    ```bash
@@ -64,6 +66,8 @@ Please refer to the comments in the [src/flows.cc](src/flows.cc) file for more d
    ```
 
 ## Prepare Trace Files
+
+   This process requires a maximum of 800GB of storage space for downloading compressed files, extracting files, and converting formats.
    
    1. Download files
 
@@ -86,6 +90,7 @@ Please refer to the comments in the [src/flows.cc](src/flows.cc) file for more d
 
 ## Run Evaluations
    
+   This process will last for several hours as all methods undergo 20 rounds of testing to obtain average performance. Additionally, the HCPP method takes longer to complete compared to the other methods.
 
    * Exact Method: 
    
