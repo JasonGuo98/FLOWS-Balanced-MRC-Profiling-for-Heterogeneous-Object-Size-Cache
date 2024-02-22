@@ -407,6 +407,10 @@ pair<double, double> one_test(reader_t *const reader, double sample_rate, string
     {
         cache = S3FIFOd_init(cc_params, NULL);
     }
+    else if (cache_algo == "S3FIFO")
+    {
+        cache = S3FIFOd_init(cc_params, NULL);
+    }
 
     HitRatioInfo global_info = {.n_hit = 0, .n_req = 0, .size_hit = 0, .size_req = 0};
     HitRatioInfo sample_info = {.n_hit = 0, .n_req = 0, .size_hit = 0, .size_req = 0};

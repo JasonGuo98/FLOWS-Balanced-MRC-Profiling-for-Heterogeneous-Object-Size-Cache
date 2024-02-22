@@ -17,7 +17,7 @@ if __name__ == "__main__":
     ContentPop_mrc_file = f"./results/profile_res-{trace_name}-REAL-Cacheus-1.000000-bin-MAE-1.csv"
     _, BMRC3, OMRC3= load_csv_mrc_file(ContentPop_mrc_file)
 
-    ContentPop_mrc_file = f"./results/profile_res-{trace_name}-REAL-S3FIFOd-1.000000-bin-MAE-1.csv"
+    ContentPop_mrc_file = f"./results/profile_res-{trace_name}-REAL-S3FIFO-1.000000-bin-MAE-1.csv"
     _, BMRC4, OMRC4= load_csv_mrc_file(ContentPop_mrc_file)
 
 
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     ContentPop_mrc_file = f"./results/profile_res-{trace_name}-WS-Cacheus-0.010000-bin-MAE-1.csv"
     _, sample_BMRC3, sample_OMRC3= load_csv_mrc_file(ContentPop_mrc_file)
 
-    ContentPop_mrc_file = f"./results/profile_res-{trace_name}-WS-S3FIFOd-0.010000-bin-MAE-1.csv"
+    ContentPop_mrc_file = f"./results/profile_res-{trace_name}-WS-S3FIFO-0.010000-bin-MAE-1.csv"
     _, sample_BMRC4, sample_OMRC4= load_csv_mrc_file(ContentPop_mrc_file)
 
     bmrcs = [BMRC1, BMRC2, BMRC3, BMRC4,]
