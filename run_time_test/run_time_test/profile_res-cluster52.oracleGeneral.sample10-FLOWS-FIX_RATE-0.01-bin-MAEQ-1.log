@@ -1,0 +1,153 @@
+mrc dump to ./run_time_test/profile_res-cluster52.oracleGeneral.sample10-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv
+tracefile: /mnt/nfs/trace/twitter/uni_kv_size/cluster52.oracleGeneral.sample10
+ok open file
+[method]: FLOWS
+[metric]: MAEQ
+[seed]: 1
+[sample_method]: FIX_RATE
+[sample_metric]: 0.01
+flows_mrc_fix_rate
+MAEQ_factor: 1.021883
+read 10000000 lines
+read 20000000 lines
+read 30000000 lines
+read 40000000 lines
+read 50000000 lines
+read 60000000 lines
+read 70000000 lines
+read 80000000 lines
+read 90000000 lines
+read 100000000 lines
+read 110000000 lines
+read 120000000 lines
+read 130000000 lines
+read 140000000 lines
+read 150000000 lines
+read 160000000 lines
+read 170000000 lines
+read 180000000 lines
+read 190000000 lines
+read 200000000 lines
+read 210000000 lines
+read 220000000 lines
+read 230000000 lines
+read 240000000 lines
+read 250000000 lines
+read 260000000 lines
+read 270000000 lines
+read 280000000 lines
+read 290000000 lines
+read 300000000 lines
+read 310000000 lines
+read 320000000 lines
+read 330000000 lines
+read 340000000 lines
+read 350000000 lines
+read 360000000 lines
+read 370000000 lines
+read 380000000 lines
+read 390000000 lines
+read 400000000 lines
+read 410000000 lines
+read 420000000 lines
+read 430000000 lines
+read 440000000 lines
+read 450000000 lines
+read 460000000 lines
+read 470000000 lines
+read 480000000 lines
+read 490000000 lines
+read 500000000 lines
+read 510000000 lines
+read 520000000 lines
+read 530000000 lines
+read 540000000 lines
+read 550000000 lines
+read 560000000 lines
+read 570000000 lines
+read 580000000 lines
+read 590000000 lines
+read 600000000 lines
+read 610000000 lines
+read 620000000 lines
+read 630000000 lines
+read 640000000 lines
+read 650000000 lines
+read 660000000 lines
+read 670000000 lines
+read 680000000 lines
+read 690000000 lines
+read 700000000 lines
+read 710000000 lines
+read 720000000 lines
+read 730000000 lines
+read 740000000 lines
+read 750000000 lines
+read 760000000 lines
+read 770000000 lines
+read 780000000 lines
+read 790000000 lines
+read 800000000 lines
+read 810000000 lines
+read 820000000 lines
+read 830000000 lines
+read 840000000 lines
+read 850000000 lines
+read 860000000 lines
+read 870000000 lines
+read 880000000 lines
+read 890000000 lines
+read 900000000 lines
+read 910000000 lines
+read 920000000 lines
+read 930000000 lines
+read 940000000 lines
+read 950000000 lines
+read 960000000 lines
+read 970000000 lines
+read 980000000 lines
+read 990000000 lines
+read 1000000000 lines
+read 1010000000 lines
+read 1020000000 lines
+read 1030000000 lines
+read 1040000000 lines
+read 1050000000 lines
+read 1060000000 lines
+read 1070000000 lines
+read 1080000000 lines
+read 1090000000 lines
+read 1100000000 lines
+read 1110000000 lines
+read 1120000000 lines
+read 1130000000 lines
+read 1140000000 lines
+read 1150000000 lines
+read 1160000000 lines
+read 1170000000 lines
+read 1180000000 lines
+read 1190000000 lines
+read 1200000000 lines
+read 1210000000 lines
+read 1220000000 lines
+read 1230000000 lines
+read 1240000000 lines
+read 1250000000 lines
+read 1260000000 lines
+read 1270000000 lines
+read 1280000000 lines
+read 1290000000 lines
+read 1300000000 lines
+read 1310000000 lines
+read 1320000000 lines
+read 1330000000 lines
+read 1340000000 lines
+start_bin_idx: 472
+205378480165.000000, 202864439164
+1269860896.000000, 1343968423
+0.971239, 1.160430
+cache_size, BMRC_ratio, OMRC_ratio
+Start Memory usage: 7260 kB
+End Memory usage: 24612 kB
+Memory usage: 17352 kB
+Time used: 322440 ms

@@ -1,0 +1,21 @@
+mrc dump to ./run_time_test/profile_res-cluster45.oracleGeneral.sample10-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv
+tracefile: /mnt/nfs/trace/twitter/uni_kv_size/cluster45.oracleGeneral.sample10
+ok open file
+[method]: FLOWS
+[metric]: MAEQ
+[seed]: 1
+[sample_method]: FIX_RATE
+[sample_metric]: 0.01
+flows_mrc_fix_rate
+MAEQ_factor: 1.019677
+read 10000000 lines
+read 20000000 lines
+start_bin_idx: 478
+1123239144.000000, 1143103486
+22073627.000000, 22288116
+1.100580, 1.070635
+cache_size, BMRC_ratio, OMRC_ratio
+Start Memory usage: 7104 kB
+End Memory usage: 12668 kB
+Memory usage: 5564 kB
+Time used: 5826 ms

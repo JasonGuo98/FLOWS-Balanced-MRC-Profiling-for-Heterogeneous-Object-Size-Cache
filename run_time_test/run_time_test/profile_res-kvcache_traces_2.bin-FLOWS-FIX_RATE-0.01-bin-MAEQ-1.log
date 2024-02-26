@@ -1,0 +1,39 @@
+mrc dump to ./run_time_test/profile_res-kvcache_traces_2.bin-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv
+tracefile: /mnt/nfs/trace/meta/bin_trace/kvcache_traces_2.bin
+ok open file
+[method]: FLOWS
+[metric]: MAEQ
+[seed]: 1
+[sample_method]: FIX_RATE
+[sample_metric]: 0.01
+flows_mrc_fix_rate
+MAEQ_factor: 1.023513
+read 10000000 lines
+read 20000000 lines
+read 30000000 lines
+read 40000000 lines
+read 50000000 lines
+read 60000000 lines
+read 70000000 lines
+read 80000000 lines
+read 90000000 lines
+read 100000000 lines
+read 110000000 lines
+read 120000000 lines
+read 130000000 lines
+read 140000000 lines
+read 150000000 lines
+read 160000000 lines
+read 170000000 lines
+read 180000000 lines
+read 190000000 lines
+read 200000000 lines
+start_bin_idx: 496
+110121745577.000000, 115702958385
+196511376.000000, 204107043
+1.118949, 1.111876
+cache_size, BMRC_ratio, OMRC_ratio
+Start Memory usage: 7212 kB
+End Memory usage: 18040 kB
+Memory usage: 10828 kB
+Time used: 44689 ms

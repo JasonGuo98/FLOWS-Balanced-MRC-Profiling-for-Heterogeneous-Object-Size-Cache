@@ -1,0 +1,3 @@
+[submodule "libCacheSim"]
+    path = libCacheSim
+    url = https://github.com/example/libCacheSim.git

@@ -1,0 +1,73 @@
+mrc dump to ./run_time_test/profile_res-cluster44.oracleGeneral.sample10-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv
+tracefile: /mnt/nfs/trace/twitter/uni_kv_size/cluster44.oracleGeneral.sample10
+ok open file
+[method]: FLOWS
+[metric]: MAEQ
+[seed]: 1
+[sample_method]: FIX_RATE
+[sample_metric]: 0.01
+flows_mrc_fix_rate
+MAEQ_factor: 1.019377
+read 10000000 lines
+read 20000000 lines
+read 30000000 lines
+read 40000000 lines
+read 50000000 lines
+read 60000000 lines
+read 70000000 lines
+read 80000000 lines
+read 90000000 lines
+read 100000000 lines
+read 110000000 lines
+read 120000000 lines
+read 130000000 lines
+read 140000000 lines
+read 150000000 lines
+read 160000000 lines
+read 170000000 lines
+read 180000000 lines
+read 190000000 lines
+read 200000000 lines
+read 210000000 lines
+read 220000000 lines
+read 230000000 lines
+read 240000000 lines
+read 250000000 lines
+read 260000000 lines
+read 270000000 lines
+read 280000000 lines
+read 290000000 lines
+read 300000000 lines
+read 310000000 lines
+read 320000000 lines
+read 330000000 lines
+read 340000000 lines
+read 350000000 lines
+read 360000000 lines
+read 370000000 lines
+read 380000000 lines
+read 390000000 lines
+read 400000000 lines
+read 410000000 lines
+read 420000000 lines
+read 430000000 lines
+read 440000000 lines
+read 450000000 lines
+read 460000000 lines
+read 470000000 lines
+read 480000000 lines
+read 490000000 lines
+read 500000000 lines
+read 510000000 lines
+read 520000000 lines
+read 530000000 lines
+read 540000000 lines
+start_bin_idx: 469
+25564165620.000000, 23069325949
+604404526.000000, 548789525
+0.823134, 0.834092
+cache_size, BMRC_ratio, OMRC_ratio
+Start Memory usage: 7260 kB
+End Memory usage: 12040 kB
+Memory usage: 4780 kB
+Time used: 148944 ms

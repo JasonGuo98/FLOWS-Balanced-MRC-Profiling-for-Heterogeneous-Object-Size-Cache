@@ -1,0 +1,24 @@
+mrc dump to ./run_time_test/profile_res-reag0c01_20230315_20230322_0.2000.bin-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv
+tracefile: /mnt/nfs/trace/meta/bin_trace/reag0c01_20230315_20230322_0.2000.bin
+ok open file
+[method]: FLOWS
+[metric]: MAEQ
+[seed]: 1
+[sample_method]: FIX_RATE
+[sample_metric]: 0.01
+flows_mrc_fix_rate
+MAEQ_factor: 1.030417
+read 10000000 lines
+read 20000000 lines
+read 30000000 lines
+read 40000000 lines
+read 50000000 lines
+start_bin_idx: 652
+407282219982169.000000, 407205153798282
+49158356.000000, 50114842
+0.999606, 1.155183
+cache_size, BMRC_ratio, OMRC_ratio
+Start Memory usage: 7088 kB
+End Memory usage: 18996 kB
+Memory usage: 11908 kB
+Time used: 12172 ms

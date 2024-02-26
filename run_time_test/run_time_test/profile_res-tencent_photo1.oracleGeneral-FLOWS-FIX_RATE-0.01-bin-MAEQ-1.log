@@ -1,0 +1,29 @@
+mrc dump to ./run_time_test/profile_res-tencent_photo1.oracleGeneral-FLOWS-FIX_RATE-0.01-bin-MAEQ-1.csv
+tracefile: /mnt/nfs/trace/qqphoto/uni_kv_size/tencent_photo1.oracleGeneral
+ok open file
+[method]: FLOWS
+[metric]: MAEQ
+[seed]: 1
+[sample_method]: FIX_RATE
+[sample_metric]: 0.01
+flows_mrc_fix_rate
+MAEQ_factor: 1.027749
+read 10000000 lines
+read 20000000 lines
+read 30000000 lines
+read 40000000 lines
+read 50000000 lines
+read 60000000 lines
+read 70000000 lines
+read 80000000 lines
+read 90000000 lines
+read 100000000 lines
+start_bin_idx: 559
+2480279864990.000000, 2539213752779
+98986334.000000, 100000000
+1.185595, 1.077074
+cache_size, BMRC_ratio, OMRC_ratio
+Start Memory usage: 7200 kB
+End Memory usage: 30772 kB
+Memory usage: 23572 kB
+Time used: 21677 ms
