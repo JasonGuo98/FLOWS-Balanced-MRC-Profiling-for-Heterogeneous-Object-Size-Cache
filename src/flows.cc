@@ -1550,11 +1550,11 @@ void shards_adj_mrc_fix_cnt(Trace &trace, string output, string metric, double s
             {
                 // in reuse distance tree
                 int32_t last_acc_time = item_last_access_time[key];
-                int64_t rd = rd_tree.getDistance(last_acc_time);
+                int64_t rd = rd_tree.getDistance(last_acc_time) * 1.0/sample_rate;
 
                 item_last_access_time[key] = now_time;
                 rd_tree.erase(last_acc_time);
-                rd_tree.insert(now_time, size / sample_rate);
+                rd_tree.insert(now_time, size);
                 if (is_MAE)
                 {
                     bin_idx = trace.get_MAE_bin_idx(rd, test_points);
@@ -1570,7 +1570,7 @@ void shards_adj_mrc_fix_cnt(Trace &trace, string output, string metric, double s
             {
                 // not in reuse distance tree
                 item_last_access_time[key] = now_time;
-                rd_tree.insert(now_time, size / sample_rate);
+                rd_tree.insert(now_time, size);
             }
         }
     }
